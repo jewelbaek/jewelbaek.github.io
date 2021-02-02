@@ -1,0 +1,222 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#me {
+  position: absolute;
+  height: 620px;
+  left: 20px;
+  top: 143px;
+  z-index: 1;
+}
+
+#jsjs {
+  position: absolute;
+  height: 590px;
+  left: 770px;
+  top: 173px;
+}
+
+#jewel {
+  position: absolute;
+  height: 280px;
+  left: 80px;
+  top: 50px;
+}
+
+#vs {
+  position: absolute;
+  height: 75px;
+  left: 680px;
+  top: 240px;
+}
+
+#jeffree {
+  position: absolute;
+  height: 300px;
+  left: 440px;
+  top: 335px;
+}
+
+#star {
+  position: absolute;
+  height: 160px;
+  left: 960px;
+  top: 560px;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.0;
+    }
+}
+
+#bling1 {
+  position: absolute;
+  width: 200px;
+  left: -12px;
+  top: 200px;
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling2 {
+  position: absolute;
+  height: 78px;
+  left: 235px;
+  top: 10px;
+  transform: rotate(67deg);
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling3 {
+  position: absolute;
+  height: 240px;
+  left: 510px;
+  top: -18px;
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling4 {
+  position: absolute;
+  height: 45px;
+  left: 380px;
+  top: 168px;
+  transform: rotate(55deg);
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling5 {
+  position: absolute;
+  height: 90px;
+  left: 709px;
+  top: 230px;
+  transform: rotate(30deg);
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling6 {
+  position: absolute;
+  height: 106px;
+  left: 503px;
+  top: 330px;
+  transform: rotate(15deg);
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling7 {
+  position: absolute;
+  height: 265px;
+  left: 717px;
+  top: 335px;
+  transform: rotate(90deg);
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling8 {
+  position: absolute;
+  height: 130px;
+  left: 1040px;
+  top: 430px;
+  transform: rotate(25deg);
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling9 {
+  position: absolute;
+  height: 75px;
+  left: 1000px;
+  top: 535px;
+  transform: rotate(13deg);
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling10 {
+  position: absolute;
+  height: 85px;
+  left: 960px;
+  top: 672px;
+  transform: rotate(67deg);
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#bling11 {
+  position: absolute;
+  height: 178.32px;
+  left: 1105px;
+  top: 565px;
+  transform: rotate(148deg);
+  -webkit-animation: pulsate 0.65s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes animatedstars {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+#stars1 {
+  position: absolute;
+  height: 24px;
+  animation: animatedstars 500s linear infinite;
+}
+
+@keyframes animatedstars2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+#stars2 {
+  position: absolute;
+  height: 24px;
+  top: 730px;
+  left: -4480px;
+  z-index: 1;
+  animation: animatedstars2 500s linear infinite;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0);}
+  50% {transform: translateY(-20px);}
+  100% {transform: translateY(0);}
+}
+
+#button {
+  position: absolute;
+  height: 80px;
+  left: 1100px;
+  top: 90px;
+}
+
+#button:hover {
+  animation-name: bounce;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
