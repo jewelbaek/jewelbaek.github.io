@@ -1,0 +1,183 @@
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: righteous;
+  src: url(righteous.ttf)
+}
+
+@font-face {
+  font-family: garamonditalic;
+  src: url(garamonditalic.otf)
+}
+
+@font-face {
+  font-family: playfairblack;
+  src: url(playfairblackitalic.ttf)
+}
+
+#spotify {
+  position: absolute;
+  top: 475px;
+  left: 510px;
+}
+
+#italo {
+  font-family: playfairblack, sans serif;
+  font-size: 100pt;
+  top: -50px;
+  background: linear-gradient(#FF1D15, #FFFFFF, #3EC300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+#disco {
+  font-family: playfairblack, sans serif;
+  font-size: 125pt;
+  color: white;
+  top: -280px;
+  position: relative;
+}
+
+#text {
+  font-family: garamonditalic;
+  font-size: 20pt;
+  color: #FFFC31;
+  top: -450px;
+  position: relative;
+}
+
+@-webkit-keyframes example {
+   0% { transform: scale(1.0); }
+   50% { transform: scale(1.5); }
+   100% { transform: scale(1.0); }
+}
+
+@-webkit-keyframes example2 {
+   0% { transform: scale(1.5); }
+   50% { transform: scale(1.0); }
+   100% { transform: scale(1.5); }
+}
+
+#star {
+  height: 120px;
+  position: absolute;
+  left: 90px;
+  top: 75px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star2 {
+  height: 150px;
+  position: absolute;
+  left: 200px;
+  top: 375px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star3 {
+  height: 50px;
+  position: absolute;
+  left: 290px;
+  top: 220px;
+  animation-name: example2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star4 {
+  height: 70px;
+  position: absolute;
+  left: 420px;
+  top: 30px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star5 {
+  height: 110px;
+  position: absolute;
+  left: 350px;
+  top: 580px;
+  animation-name: example2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star6 {
+  height: 60px;
+  position: absolute;
+  left: 100px;
+  top: 580px;
+  animation-name: example2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star7 {
+  height: 60px;
+  position: absolute;
+  left: 820px;
+  top: 50px;
+  animation-name: example2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star8 {
+  height: 160px;
+  position: absolute;
+  left: 1250px;
+  top: 130px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star9 {
+  height: 100px;
+  position: absolute;
+  left: 1130px;
+  top: 320px;
+  animation-name: example2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star10 {
+  height: 50px;
+  position: absolute;
+  left: 1000px;
+  top: 150px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star11 {
+  height: 80px;
+  position: absolute;
+  left: 1330px;
+  top: 450px;
+  animation-name: example2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+#star12 {
+  height: 180px;
+  position: absolute;
+  left: 1020px;
+  top: 500px;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
