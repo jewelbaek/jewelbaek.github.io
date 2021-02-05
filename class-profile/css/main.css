@@ -1,3 +1,18 @@
+body {
+  font-family: suissemono;
+  background: linear-gradient(234deg, #b3b5bb, #595a5d);
+  background-size: 400% 400%;
+
+   -webkit-animation: AnimationName 8s ease infinite;
+   animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+   0%{background-position:0% 51%}
+   50%{background-position:100% 50%}
+   100%{background-position:0% 51%}
+}
+
 #web-ring {
   position: fixed;
   top: 15px;
@@ -15,4 +30,38 @@
 
 #web-ring a:hover {
   text-decoration: underline;
+}
+
+@font-face {
+  font-family: machina;
+  src: url(NeueMachina-Regular.otf)
+}
+
+@font-face {
+  font-family: suissemono;
+  src: url(SuisseIntlMono-Regular.otf)
+}
+
+#hi {
+  font-size: 50pt;
+  font-family: machina;
+  margin-top: 50px;
+}
+
+#abit {
+  font-size: 30pt;
+  font-family: machina;
+}
+
+#caption {
+  font-family: suissemono;
+  color: black;
+}
+
+#description {
+  font-family: suissemono;
+}
+
+#main {
+  font-family: suissemono;
 }
