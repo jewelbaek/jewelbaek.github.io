@@ -24,6 +24,11 @@ body {
   font-family: suissemono;
 }
 
+#home:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
 #thirteen {
   position: absolute;
   top: 60px;
