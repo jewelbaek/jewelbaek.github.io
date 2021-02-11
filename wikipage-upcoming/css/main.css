@@ -1,0 +1,128 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: suissemono;
+  src: url(suissemono.otf)
+}
+
+@font-face {
+  font-family: suissemonobold;
+  src: url(suissemonobold.otf)
+}
+
+.text {
+  font-family: suissemonobold;
+  color: white;
+  font-size: 20pt;
+}
+
+#home {
+  margin-left: 1340px;
+  font-size: 20pt;
+  font-family: suissemono;
+}
+
+#home:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#twentyone {
+  position: absolute;
+  top: 60px;
+  margin-left: 15px;
+  z-index: 2;
+}
+
+#twentyone:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#movies2021 {
+  margin-left: 110px;
+  top: 53px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+  z-index: 2;
+}
+
+img{
+  display: none;
+}
+
+.movies21:hover img{
+  display: block;
+  width: 1220px;
+}
+
+#undated {
+  position: absolute;
+  top: 160px;
+  margin-left: 15px;
+}
+
+#undated:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#undated2 {
+  margin-left: 160px;
+  top: 153px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+}
+
+img{
+  display: none;
+}
+
+.undated2:hover img{
+  display: block;
+  width: 1220px;
+}
+
+#development {
+  position: absolute;
+  top: 260px;
+  margin-left: 15px;
+}
+
+#development:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#development1 {
+  margin-left: 285px;
+  top: 253px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+}
+
+img{
+  display: none;
+}
+
+.development2:hover img{
+  display: block;
+  width: 1220px;
+}
