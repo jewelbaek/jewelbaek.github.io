@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: suissemono;
+  src: url(suissemono.otf)
+}
+
+.link {
+  font-family: suissemono;
+  font-size: 15pt;
+  text-decoration: none; color: white;
+}
+
+.link:hover {
+  animation: animation 15s infinite;
+}
+
+@keyframes animation {
+  16% {color: #ff0022;}
+  32% {color: #77f8f1;}
+  48% {color: #fff200;}
+  64% {color: #ff00ff;}
+  80% {color: #1237ba;}
+  100% {color: #ffffff;}
+}
+
+#title {
+  color: white;
+  font-family: suissemono;
+  top: 230px;
+  position: relative;
+  font-size: 20pt;
+}
+
+#ten {
+  top: 240px;
+  position: relative;
+}
+
+#twenty {
+  top: 265px;
+  position: relative;
+}
+
+#upcoming {
+  top: 290px;
+  position: relative;
+}
