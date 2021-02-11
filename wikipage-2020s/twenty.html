@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>2020s</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+  <a href="https://jewelbaek.github.io/wikipage-redesign/"
+    style="text-decoration:none;" id="home" class="text">HOME</a>
+  <div class="text" id="twenty" onclick="myFunction()">2020</div>
+    <div id="movies2020">
+      <p class="movies20">First Cow
+       <img src="images/cow.gif"></p>
+      <p class="movies20">Boys State
+       <img src="images/boys.gif"></p>
+      <p class="movies20">On the Rocks
+       <img src="images/rocks.gif"></p>
+      <p class="movies20">Saint Maud
+        <img src="images/saintmaud.gif"></p></div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("movies2020");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
