@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <a href="file:///Users/jewelbaek/Desktop/wikipage-redesign/index.html"
+  <a href="https://jewelbaek.github.io/wikipage-redesign/"
     style="text-decoration:none;" id="home" class="text">HOME</a>
   <div class="text" id="thirteen" onclick="myFunction13()">2013</div>
     <div id="movies2013">
@@ -18,3 +18,15 @@
        <img src="images/2013/springbreakers.gif"></p>
       <p class="movies13">The Bling Ring
         <img src="images/2013/theblingring.gif"></p></div>
+
+<script>
+  function myFunction13() {
+    var x = document.getElementById("movies2013");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+</script>
