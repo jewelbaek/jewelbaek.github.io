@@ -1,0 +1,230 @@
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: suissemono;
+  src: url(suissemono.otf)
+}
+
+@font-face {
+  font-family: suissemonobold;
+  src: url(suissemonobold.otf)
+}
+
+.text {
+  font-family: suissemonobold;
+  color: white;
+  font-size: 20pt;
+}
+
+#home {
+  margin-left: 1340px;
+  font-size: 20pt;
+  font-family: suissemono;
+}
+
+#home:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#thirteen {
+  position: absolute;
+  top: 60px;
+  margin-left: 15px;
+}
+
+#thirteen:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#movies2013 {
+  margin-left: 110px;
+  top: 53px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+}
+
+img{
+  display: none;
+}
+
+.movies13:hover img{
+  display: block;
+  width: 1220px;
+}
+
+#fourteen {
+  position: absolute;
+  top: 160px;
+  margin-left: 15px;
+}
+
+#fourteen:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#movies2014 {
+  margin-left: 110px;
+  top: 155px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+}
+
+.movies14:hover img{
+  display: block;
+  width: 1220px;
+}
+
+#fifteen {
+  position: absolute;
+  top: 260px;
+  margin-left: 15px;
+}
+
+#fifteen:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#movies2015 {
+  margin-left: 110px;
+  top: 255px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+}
+
+.movies15:hover img{
+  display: block;
+  width: 1220px;
+}
+
+#sixteen {
+  position: absolute;
+  top: 360px;
+  margin-left: 15px;
+}
+
+#sixteen:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#movies2016 {
+  margin-left: 110px;
+  top: 355px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+}
+
+.movies16:hover img{
+  display: block;
+  width: 1220px;
+}
+
+#seventeen {
+  position: absolute;
+  top: 460px;
+  margin-left: 15px;
+}
+
+#seventeen:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#movies2017 {
+  margin-left: 110px;
+  top: 455px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+}
+
+.movies17:hover img{
+  display: block;
+  width: 1220px;
+}
+
+#eighteen {
+  position: absolute;
+  top: 560px;
+  margin-left: 15px;
+}
+
+#eighteen:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#movies2018 {
+  margin-left: 110px;
+  top: 555px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+}
+
+.movies18:hover img{
+  display: block;
+  width: 1220px;
+}
+
+#nineteen {
+  position: absolute;
+  top: 660px;
+  margin-left: 15px;
+}
+
+#nineteen:hover {
+  color: #fff200;
+  cursor: pointer;
+}
+
+#movies2019 {
+  margin-left: 110px;
+  top: 655px;
+  background-color: white;
+  font-family: suissemono;
+  color: black;
+  position: absolute;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: none;
+}
+
+.movies19:hover img{
+  display: block;
+  width: 1220px;
+}
