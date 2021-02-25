@@ -16,6 +16,11 @@ body {
   src: url(suissesemibold.otf)
 }
 
+@font-face {
+  font-family: impactt;
+  src: url(impact.ttf)
+}
+
 .title {
   font-family: suisse;
   padding: 0;
@@ -24,8 +29,8 @@ body {
 
 #wallets {
   font-size: 10rem;
-  letter-spacing: -0.3rem;
-  font-family: impact;
+  letter-spacing: rem;
+  font-family: impactt;
   font-style: italic;
   margin-top: 2rem;
   background: -webkit-linear-gradient(#02AEF2, #243656);
