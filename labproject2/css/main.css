@@ -22,17 +22,19 @@ body {
 }
 
 .title {
-  font-family: suisse;
   padding: 0;
   margin: 0;
+  font-family: suisse;
 }
 
 #wallets {
   font-size: 10rem;
-  letter-spacing: rem;
+  letter-spacing: 0.1rem;
   font-family: impactt;
   font-style: italic;
+  font-weight: bold;
   margin-top: 2rem;
+  margin-left: -2rem;
   background: -webkit-linear-gradient(#02AEF2, #243656);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -42,6 +44,7 @@ body {
   font-size: 3rem;
   position: relative;
   margin-top: -10rem;
+  font-family: suisse;
 }
 
 .body {
