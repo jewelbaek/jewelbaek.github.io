@@ -44,7 +44,7 @@ body {
   font-size: 3rem;
   position: relative;
   margin-top: -10rem;
-  font-family: suisse;
+  font-family: suisse, helvetica;
 }
 
 .body {
