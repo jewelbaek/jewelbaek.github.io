@@ -821,6 +821,7 @@ and (orientation : portrait) {
     left: 0;
     top: 0;
     z-index: 2000;
+    display: block;
   }
 
   #message {
@@ -899,6 +900,7 @@ and (orientation : portrait) {
     left: 0;
     top: 0;
     z-index: 2000;
+    display: block;
   }
 
   #message {
