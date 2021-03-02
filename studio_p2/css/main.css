@@ -245,7 +245,7 @@ body.loaded .shadows {
   animation: slide-top 5s both;
   animation-delay: 4s;
   z-index: 0;
-  display: flex;
+  display: block;
 }
 
 @keyframes slide-top {
