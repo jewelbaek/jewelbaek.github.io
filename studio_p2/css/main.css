@@ -1,15 +1,12 @@
 body {
   background-color: black;
   cursor: default;
+  overflow-y: hidden;
 }
 
 @font-face {
   font-family: suissemono;
   src: url(suissemono.otf)
-}
-
-#warning-message {
-  display: none;
 }
 
 .shadows {
@@ -20,10 +17,210 @@ body {
   line-height: 3.3vh;
   width: 90vw;
   position: absolute;
-  top: 50%;
+  top: 39.5%;
   left: 50%;
   transform: translate(-48.5%, -50%);
   text-align: center;
+  margin: 0;
+  transition: opacity 7s;
+  z-index: -5000;
+  opacity: 0;
+}
+
+body.loaded .shadows {
+  opacity: 1;
+}
+
+#shadows1 {
+  color: #1B1B1B;
+}
+
+#shadows1.animated {
+  animation: change1 10s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes change1 {
+  0% {color: #1b1b1b}
+  50% {color: #000000}
+  100% {color: #1b1b1b}
+}
+
+#shadows2 {
+  color: #393939;
+}
+
+#shadows2.animated {
+  animation: change2v2 3s,
+  change2 23s infinite;
+  animation-delay: 1s, 4s;
+
+}
+
+@keyframes change2v2 {
+  0% {color: #393939}
+  100% {color: #000000}
+}
+
+@keyframes change2 {
+  0% {color: #000000}
+  50% {color: #1b1b1b}
+  100% {color: #000000}
+}
+
+#shadows3 {
+  color: #595959;
+}
+
+#shadows3.animated {
+  animation: change3v2 3s,
+  change3 17s infinite;
+  animation-delay: 1s, 4s;
+}
+
+@keyframes change3v2 {
+  0% {color: #595959}
+  100% {color: #000000}
+}
+
+@keyframes change3 {
+  0% {color: #000000}
+  50% {color: #1b1b1b}
+  100% {color: #000000}
+}
+
+#shadows4 {
+  color: #9B9B9B;
+}
+
+#shadows4.animated {
+  animation: change4v2 3s,
+  change4 25s infinite;
+  animation-delay: 1s, 4s;
+}
+
+@keyframes change4v2 {
+  0% {color: #9b9b9b}
+  100% {color: #000000}
+}
+
+@keyframes change4 {
+  0% {color: #000000}
+  50% {color: #1b1b1b}
+  100% {color: #000000}
+}
+
+#shadows5 {
+  color: #ffffff;
+  transition: ease 2s;
+}
+
+#shadows5:hover {
+  color: #1b1b1b;
+  transition: ease 2s;
+  cursor: pointer;
+}
+
+#shadows5.animated {
+  animation: change5v2 3s,
+  change5 20s infinite;
+  animation-delay: 1s, 4s;
+}
+
+@keyframes change5v2 {
+  0% {color: #1b1b1b}
+  100% {color: #000000}
+}
+
+@keyframes change5 {
+  0% {color: #000000}
+  50% {color: #1b1b1b}
+  100% {color: #000000}
+}
+
+#shadows6 {
+  color: #9B9B9B;
+}
+
+#shadows6.animated {
+  animation: change6v2 3s,
+  change6 13s infinite;
+  animation-delay: 1s, 4s;
+}
+
+@keyframes change6v2 {
+  0% {color: #9b9b9b}
+  100% {color: #000000}
+}
+
+@keyframes change6 {
+  0% {color: #000000}
+  50% {color: #1b1b1b}
+  100% {color: #000000}
+}
+
+#shadows7 {
+  color: #595959;
+}
+
+#shadows7.animated {
+  animation: change7v2 3s,
+  change7 15s infinite;
+  animation-delay: 1s, 4s;
+}
+
+@keyframes change7v2 {
+  0% {color: #595959}
+  100% {color: #000000}
+}
+
+@keyframes change7 {
+  0% {color: #000000}
+  50% {color: #1b1b1b}
+  100% {color: #000000}
+}
+
+#shadows8 {
+  color: #393939;
+  margin: 0;
+}
+
+#shadows8.animated {
+  animation: change8v2 3s,
+  change8 20s infinite;
+  animation-delay: 1s, 4s;
+}
+
+@keyframes change8v2 {
+  0% {color: #393939}
+  100% {color: #000000}
+}
+
+@keyframes change8 {
+  0% {color: #000000}
+  50% {color: #1b1b1b}
+  100% {color: #000000}
+}
+
+#shadows9 {
+  color: #1B1B1B;
+}
+
+#shadows9.animated {
+  animation: change9v2 3s,
+  change9 25s infinite;
+  animation-delay: 1s, 4s;
+}
+
+@keyframes change9v2 {
+  0% {color: #1b1b1b}
+  100% {color: #000000}
+}
+
+@keyframes change9 {
+  0% {color: #000000}
+  50% {color: #1b1b1b}
+  100% {color: #000000}
 }
 
 .door {
@@ -34,12 +231,37 @@ body {
   text-align: justify;
   position: absolute;
   width: 90vw;
-  height: 50vh;
-  top: 50%;
-  left: 50%;
+  height: 48vh;
+  top: 80%;
+  left: 5%;
   transform: translate(-50%, -50%);
   overflow-x: auto;
   overflow-y: hidden;
+  z-index: 0;
+  display: none;
+}
+
+.door.animated {
+  animation: slide-top 5s both;
+  animation-delay: 4s;
+  z-index: 0;
+  display: flex;
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-54vh);
+            transform: translateY(-54vh);
+  }
+}
+
+
+.door::-webkit-scrollbar {
+  display: none;
 }
 
 .kids {
@@ -525,13 +747,44 @@ body {
   position: absolute;
 }
 
+.shadowsv2 {
+  font-size: 7.3vh;
+  color: #141414;
+  font-family: essonnes-display;
+  letter-spacing: 2.8vw;
+  line-height: 3.3vh;
+  width: 90vw;
+  position: absolute;
+  text-align: center;
+  transition: opacity 7s;
+  background-color: black;
+  top: 80.5%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 2.5rem;
+  opacity: 0;
+  z-index: 1000;
+}
+
+body.loaded .shadowsv2 {
+  opacity: 1;
+}
+
 
 /* Smartphones (landscape) ----------- */
 @media only screen
-and (min-width : 560px)
-and (max-width : 825px)
+and (min-height : 280px)
+and (max-height : 460px)
 and (orientation : landscape) {
   .shadows {
+    font-size: 6vh;
+    letter-spacing: 3vw;
+    line-height: 4vh;
+  }
+
+  .shadowsv2 {
     font-size: 6vh;
     letter-spacing: 3vw;
     line-height: 4vh;
@@ -544,10 +797,40 @@ and (orientation : landscape) {
 
 /* Smartphones (portrait) ----------- */
 @media only screen
-and (min-height : 560px)
-and (max-height : 825px)
+and (min-width : 280px)
+and (max-width : 460px)
 and (orientation : portrait) {
+
+  #warning-message {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 2000;
+  }
+
+  #message {
+    font-family: suissemono;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 5vh;
+    width: 50vh;
+    font-size: 1.5vh;
+    padding: 0;
+  }
+
   .shadows {
+    font-size: 2vh;
+    letter-spacing: 3vw;
+    line-height: 7vh;
+  }
+
+  .shadowsv2 {
     font-size: 2vh;
     letter-spacing: 3vw;
     line-height: 7vh;
@@ -570,6 +853,12 @@ and (orientation : landscape) {
     line-height: 5.5vh;
   }
 
+  .shadowsv2 {
+    font-size: 4.6vh;
+    letter-spacing: 3vw;
+    line-height: 5.5vh;
+  }
+
   .door {
     font-size: 2vh;
     line-height: 5vh;
@@ -582,6 +871,12 @@ and (min-height : 1023px)
 and (max-height : 1367px)
 and (orientation : portrait) {
   .shadows {
+    font-size: 2.6vh;
+    letter-spacing: 3vw;
+    line-height: 6vh;
+  }
+
+  .shadowsv2 {
     font-size: 2.6vh;
     letter-spacing: 3vw;
     line-height: 6vh;
