@@ -810,7 +810,7 @@ and (orientation : landscape) {
 /* Smartphones (portrait) ----------- */
 @media only screen
 and (min-width : 280px)
-and (max-width : 460px)
+and (max-width : 500px)
 and (orientation : portrait) {
 
   #warning-message {
