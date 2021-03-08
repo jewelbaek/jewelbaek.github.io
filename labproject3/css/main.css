@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.orange {
+  background-color: #FD7C21;
+  display: grid;
+  position: relative;
+}
+
+.blue {
+  background-color: #0079BF;
+  display: grid;
+  position: relative;
+}
+
+.yellowcircle {
+  width: 16vw;
+  height: 16vw;
+  background-color: #FFDE0A;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  animation: yellowcircleani 3s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes yellowcircleani {
+  0% {background-color: #FFDE0A;}
+  33% {background-color: #F05219;}
+  66% {background-color: #E12120;}
+}
+
+.orangecircle {
+  width: 12vw;
+  height: 12vw;
+  background-color: #F05219;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: inline-block;
+  z-index: 20;
+  animation: orangecircleani 3s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes orangecircleani {
+  0% {background-color: #F05219;}
+  33% {background-color: #E12120;}
+  66% {background-color: #FFDE0A;}
+}
+
+.redcircle {
+  width: 7vw;
+  height: 7vw;
+  background-color: #E12120;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 30;
+  animation: redcircleani 3s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes redcircleani {
+  0% {background-color: #E12120;}
+  33% {background-color: #FFDE0A;}
+  66% {background-color: #F05219;}
+}
+
+.lightbluecircle {
+  width: 16vw;
+  height: 16vw;
+  background-color: #8BBDD9;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  animation: lightbluecircleani 3s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes lightbluecircleani {
+  0% {background-color: #8BBDD9;}
+  33% {background-color: #0A122A;}
+  66% {background-color: #005A8F;}
+}
+
+.darkbluecircle {
+  width: 11vw;
+  height: 11vw;
+  background-color: #0A122A;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: inline-block;
+  z-index: 20;
+  animation: darkbluecircleani 3s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes darkbluecircleani {
+  0% {background-color: #0A122A;}
+  33% {background-color: #005A8F;}
+  66% {background-color: #8BBDD9;}
+}
+
+.bluecircle {
+  width: 5vw;
+  height: 5vw;
+  background-color: #005A8F;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 30;
+  animation: bluecircleani 3s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes bluecircleani {
+  0% {background-color: #005A8F;}
+  33% {background-color: #8BBDD9;}
+  66% {background-color: #0A122A;}
+}
