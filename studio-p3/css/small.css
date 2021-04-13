@@ -1,0 +1,263 @@
+body {
+  background-color: #04082D;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: playfair;
+  src: url(playfairbolditalic.ttf)
+}
+
+@font-face {
+  font-family: callingcode;
+  src: url(callingcode.otf)
+}
+
+#menu {
+  background-color: ;
+  padding: 0;
+  margin-top: 0;
+  height: 12vh;
+  width: 100vw;
+  z-index: 100;
+  position: fixed;
+}
+
+#menu2 {
+  display: none;
+}
+
+#plushie {
+  padding: 0;
+  margin-left: 3vw;
+  margin-top: 0vh;
+  margin-bottom: 0;
+  transform: rotate(-2deg);
+  font-family: playfair;
+  font-size: 3rem;
+  color: #F5BA47;
+}
+
+#plushie2 {
+  display: none;
+}
+
+.twinkle {
+  height: 1.75rem;
+  position: absolute;
+}
+
+#twinkle1 {
+  margin-left: 2.1vw;
+}
+
+#twinkle2 {
+  margin-left: 24.2vw;
+  margin-top: -6.5vh;
+}
+
+.tabs {
+  margin-top: -3.7vh;
+  position: absolute;
+  font-family: callingcode;
+  font-size: 1.5rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #8188CB;
+}
+
+#xs {
+  margin-left: 31vw;
+}
+
+#small {
+  margin-left: 51vw;
+}
+
+#med {
+  margin-left: 71vw;
+}
+
+#large {
+  margin-left: 91vw;
+}
+
+.button {
+  width: 3vh;
+  height: 3vh;
+  float: right;
+  margin-top: 12vh;
+  margin-right: 3vw;
+}
+
+.buttons {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 1vh;
+  height: 257vh;
+  width: 100vw;
+  overflow-y: auto;
+  position: relative;
+}
+
+.starburst {
+  background-color: ;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  display: inline-block;
+  height: 25vh;
+}
+
+.images {
+  background-color: ;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: inline-block;
+  height: 19vh;
+}
+
+.elements {
+  display: grid;
+  position: relative;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (min-width : 280px)
+and (max-width : 500px)
+and (orientation : portrait) {
+  #menu {
+    display: none;
+  }
+
+  #plushie2 {
+    text-align: center;
+    display: block;
+    margin-top: 1vh;
+    font-family: playfair;
+    font-size: 2.5rem;
+    color: #F5BA47;
+  }
+
+  #menu2 {
+    display: block;
+    text-align: center;
+    height: 10vh;
+    width: 100vw;
+    z-index: 100;
+  }
+
+  .tabs1 {
+    display: inline-block;
+    font-family: callingcode;
+    font-size: 1.5rem;
+    color: white;
+    padding-right: 10vw;
+    }
+
+  .buttons {
+    display: inline-block;
+    width: 3vh;
+    height: 3vh;
+    padding: 1.5vw;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    height: 360vh;
+  }
+
+  .starburst {
+    height: 18vh;
+  }
+
+  .images {
+    height: 17vh;
+  }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-height : 1023px)
+and (max-height : 1367px)
+and (orientation : portrait) {
+  #menu {
+    display: none;
+  }
+
+  #plushie2 {
+    text-align: center;
+    display: block;
+    margin-top: 1vh;
+    font-family: playfair;
+    font-size: 4rem;
+    color: #F5BA47;
+  }
+
+  #menu2 {
+    display: block;
+    text-align: center;
+    height: 10vh;
+    width: 100vw;
+    z-index: 100;
+  }
+
+  .tabs1 {
+    display: inline-block;
+    font-family: callingcode;
+    font-size: 2rem;
+    color: white;
+    padding-right: 10vw;
+    }
+
+  .buttons {
+    display: inline-block;
+    width: 3vh;
+    height: 3vh;
+    padding: 1.5vw;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    height: 235vh;
+    width: 100vw;
+  }
+
+  .starburst {
+    height: 17vh;
+  }
+
+  .images {
+    height: 15vh;
+  }
+
+}
