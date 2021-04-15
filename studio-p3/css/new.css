@@ -143,7 +143,7 @@ a:hover {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   position: relative;
 }
@@ -154,7 +154,7 @@ a:hover {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: auto;
-  margin-left: 3rem;
+  margin-left: 6rem;
   top: 0; left: 0; bottom: 0; right: 0;
   display: grid;
 }
