@@ -95,10 +95,10 @@ function showToys() {
     var toyXSmall = document.getElementById("xs");
       toyXSmall.addEventListener("click", function(){
         console.log("is it working lol");
-        if (toyImage.classList.contains("x-small")){
-        toyImage.style.display = "grid"
+        if (toy.fields.size === 'x-small'){
+        toyContainer.style.display = "grid"
       } else {
-        toyImage.style.display = "none"
+        toyContainer.style.display = "none"
       }
     })
 
