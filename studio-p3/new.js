@@ -92,45 +92,6 @@ function showToys() {
     toyUniverse.innerText = ("universe: ")+toy.fields.universe;
     toyContainer.append(toyUniverse);
 
-    var toyXSmall = document.getElementById("xs");
-      toyXSmall.addEventListener("click", function(){
-        console.log("is it working lol");
-        if (toy.fields.size === 'x-small'){
-        toyContainer.style.display = "grid"
-      } else {
-        toyContainer.style.display = "none"
-      }
-    })
-
-    var toySmall = document.getElementById("small");
-      toySmall.addEventListener("click", function(){
-        console.log("is it working lol");
-        if (toy.fields.size === 'small'){
-        toyContainer.style.display = "grid"
-      } else {
-        toyContainer.style.display = "none"
-      }
-    })
-
-    var toyMedium = document.getElementById("med");
-      toyMedium.addEventListener("click", function(){
-        console.log("is it working lol");
-        if (toy.fields.size === 'medium'){
-        toyContainer.style.display = "grid"
-      } else {
-        toyContainer.style.display = "none"
-      }
-    })
-
-    var toyLarge = document.getElementById("large");
-      toyLarge.addEventListener("click", function(){
-        console.log("is it working lol");
-        if (toy.fields.size === 'large'){
-        toyContainer.style.display = "grid"
-      } else {
-        toyContainer.style.display = "none"
-      }
-    })
     });
 }
 
