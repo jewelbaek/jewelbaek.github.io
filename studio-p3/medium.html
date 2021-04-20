@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>MEDIUM</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <script type="text/javascript" src="javascript/medium.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="css/medium.css"/>
+    <script type="text/javascript" src="./lib/airtable.browser.js" defer></script>
+    <script type="text/javascript" src="./javascript/medium.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +15,15 @@
     <p id="plushie">Plushie Closet!</p>
       <img src="images/twinkle01.png" class="twinkle" id="twinkle1">
       <img src="images/twinkle02.png" class="twinkle" id="twinkle2">
-    <p id="xs" class=tabs>
-      <a href="file:///Users/jewelbaek/Desktop/studio-p3/xs.html" style="text-decoration:none;">x-small</a></p>
-    <p id="small" class=tabs>
-      <a href="file:///Users/jewelbaek/Desktop/studio-p3/small.html" style="text-decoration:none;">small</a></p>
-    <p id="med" class=tabs>
-      <a href="file:///Users/jewelbaek/Desktop/studio-p3/medium.html" style="text-decoration:none;">medium</a></p>
-    <p id="large" class=tabs>
-      <a href="file:///Users/jewelbaek/Desktop/studio-p3/large.html" style="text-decoration:none;">large</a></p>
+      <p id="xs" class=tabs>
+        <a href="file:///Users/jewelbaek/Desktop/jewelbaek.github.io/studio-p3/xs.html" style="text-decoration:none;">x-small</a></p>
+      <p id="small" class=tabs>
+        <a href="file:///Users/jewelbaek/Desktop/jewelbaek.github.io/studio-p3/small.html" style="text-decoration:none;">small</a></p>
+      <p id="med" class=tabs>
+        <a href="file:///Users/jewelbaek/Desktop/jewelbaek.github.io/studio-p3/medium.html" style="text-decoration:none;">medium</a></p>
+      <p id="large" class=tabs>
+        <a href="file:///Users/jewelbaek/Desktop/jewelbaek.github.io/studio-p3/large.html" style="text-decoration:none;">large</a></p>
+      large</p>
   </div>
 
   <img src="images/listmenu.png" class="button" id="listmenu">
@@ -32,7 +34,7 @@
     <p class=tabs1>
       <a href="file:///Users/jewelbaek/Desktop/studio-p3/xs.html" style="text-decoration:none;">xs</a></p>
     <p class=tabs1>
-      <a href="file:///Users/jewelbaek/Desktop/studio-p3/small.html" style="text-decoration:none;">s</a></p>
+      s</a></p>
     <p class=tabs1>
       <a href="file:///Users/jewelbaek/Desktop/studio-p3/medium.html" style="text-decoration:none;">m</a></p>
     <p class=tabs1>
@@ -42,128 +44,70 @@
     <img src="images/gridmenu.png" class="buttons" id="gridmenu">
   </div>
 
-
   <div class="container">
-    <div id="amonguscyan" class="elements">
-      <img src="images/starburstblue.png" class="starburst" id="blue1">
-      <img src="images/medium/amonguscyan.png" class="images" onclick="show()">
-        <div class="largediv">
-        <div class="close-img" onclick="close();">&lt;&lt; back</div>
-        <img src="images/medium/amonguscyan.png" class="largeimages"></div></div>
-
-    <div id="amongusred" class="elements">
-      <img src="images/starburstyellow1.png" class="starburst" id="yellow1v1">
-      <img src="images/medium/amongusred.png" class="images" onclick="show()">
-        <div class="largediv">
-        <div class="close-img" onclick="close();">&lt;&lt; back</div>
-        <img src="images/medium/amongusred.png" class="largeimages"></div></div>
-
-    <div id="appa" class="elements">
-      <img src="images/starburstwhite.png" class="starburst" id="white1">
-      <img src="images/medium/appa.png" class="images" onclick="show()">
-        <div class="largediv">
-        <div class="close-img" onclick="close();">&lt;&lt; back</div>
-        <img src="images/medium/appa.png" class="largeimages"></div></div>
-
-    <div id="bowser" class="elements">
-      <img src="images/starburstyellow2.png" class="starburst" id="yellow1v2">
-      <img src="images/medium/bowser.png" class="images" onclick="show()"></div>
-
-    <div id="dipsy" class="elements">
-      <img src="images/starburstwhite.png" class="starburst" id="white2">
-      <img src="images/medium/dipsy.png" class="images" onclick="show()"></div>
-
-    <div id="donald" class="elements">
-      <img src="images/starburstyellow2.png" class="starburst" id="yellow2v2">
-      <img src="images/medium/donald.png" class="images" onclick="show()"></div>
-
-    <div id="dumbo" class="elements">
-      <img src="images/starburstblue.png" class="starburst" id="blue2">
-      <img src="images/medium/dumbo.png" class="images" onclick="show()"></div>
-
-    <div id="fruitninja" class="elements">
-      <img src="images/starburstyellow1.png" class="starburst" id="yellow2v1">
-      <img src="images/medium/fruitninja.png" class="images" onclick="show()"></div>
-
-    <div id="goofy" class="elements">
-      <img src="images/starburstyellow1.png" class="starburst" id="yellow3v1">
-      <img src="images/medium/goofy.png" class="images" onclick="show()"></div>
-
-    <div id="jake" class="elements">
-      <img src="images/starburstblue.png" class="starburst" id="blue3">
-      <img src="images/medium/jake.png" class="images" onclick="show()"></div>
-
-    <div id="mickey" class="elements">
-      <img src="images/starburstyellow2.png" class="starburst" id="yellow3v2">
-      <img src="images/medium/mickey.png" class="images" onclick="show()"></div>
-
-    <div id="mikewazowski" class="elements">
-      <img src="images/starburstwhite.png" class="starburst" id="white3">
-      <img src="images/medium/mikewazowski.png" class="images" onclick="show()"></div>
-
-    <div id="minnie" class="elements">
-      <img src="images/starburstyellow2.png" class="starburst" id="yellow4v2">
-      <img src="images/medium/minnie.png" class="images" onclick="show()"></div>
-
-    <div id="momo" class="elements">
-      <img src="images/starburstwhite.png" class="starburst" id="white4">
-      <img src="images/medium/momo.png" class="images" onclick="show()"></div>
-
-    <div id="olaf" class="elements">
-      <img src="images/starburstyellow1.png" class="starburst" id="yellow4v1">
-      <img src="images/medium/olaf.png" class="images" onclick="show()"></div>
-
-    <div id="plantsvszombies" class="elements">
-      <img src="images/starburstblue.png" class="starburst" id="blue4">
-      <img src="images/medium/plantsvszombies.png" class="images" onclick="show()"></div>
-
-    <div id="pluto" class="elements">
-      <img src="images/starburstblue.png" class="starburst" id="blue5">
-      <img src="images/medium/pluto.png" class="images" onclick="show()"></div>
-
-    <div id="pokemon" class="elements">
-      <img src="images/starburstyellow1.png" class="starburst" id="yellow5v1">
-      <img src="images/medium/pokemon.png" class="images" onclick="show()"></div>
-
-    <div id="shrek" class="elements">
-      <img src="images/starburstwhite.png" class="starburst" id="white5">
-      <img src="images/medium/shrek.png" class="images" onclick="show()"></div>
-
-    <div id="snorlax" class="elements">
-      <img src="images/starburstyellow2.png" class="starburst" id="yellow5v2">
-      <img src="images/medium/snorlax.png" class="images" onclick="show()"></div>
-
-    <div id="snout" class="elements">
-      <img src="images/starburstwhite.png" class="starburst" id="white6">
-      <img src="images/medium/snout.png" class="images" onclick="show()"></div>
-
-    <div id="sonic" class="elements">
-      <img src="images/starburstyellow2.png" class="starburst" id="yellow6v2">
-      <img src="images/medium/sonic.png" class="images" onclick="show()"></div>
-
-    <div id="sully" class="elements">
-      <img src="images/starburstblue.png" class="starburst" id="blue6">
-      <img src="images/medium/sully.png" class="images" onclick="show()"></div>
-
-    <div id="totoro" class="elements">
-      <img src="images/starburstyellow1.png" class="starburst" id="yellow6v1">
-      <img src="images/medium/totoro.png" class="images" onclick="show()"></div>
-
-    <div id="winnie" class="elements">
-      <img src="images/starburstyellow1.png" class="starburst" id="yellow7v1">
-      <img src="images/medium/winnie.png" class="images" onclick="show()"></div>
-
-    <div id="wombat" class="elements">
-      <img src="images/starburstblue.png" class="starburst" id="blue7">
-      <img src="images/medium/wombat.png" class="images" onclick="show()"></div>
-
-    <div id="yoshi" class="elements">
-      <img src="images/starburstyellow2.png" class="starburst" id="yellow7v2">
-      <img src="images/medium/yoshi.png" class="images" onclick="show()"></div>
-
 
   </div>
 
+
+  <div class="starcontainer">
+    <div id="1" class="elements">
+      <img src="images/starburstblue.png" class="starburst" id="blue1"></div>
+    <div id="2" class="elements">
+      <img src="images/starburstyellow1.png" class="starburst" id="yellow1v1"></div>
+    <div id="3" class="elements">
+      <img src="images/starburstwhite.png" class="starburst" id="white1"></div>
+    <div id="4" class="elements">
+      <img src="images/starburstyellow2.png" class="starburst" id="yellow1v2"></div>
+    <div id="5" class="elements">
+      <img src="images/starburstwhite.png" class="starburst" id="white2"></div>
+    <div id="6" class="elements">
+      <img src="images/starburstyellow2.png" class="starburst" id="yellow2v2"></div>
+    <div id="7" class="elements">
+      <img src="images/starburstblue.png" class="starburst" id="blue2"></div>
+    <div id="8" class="elements">
+      <img src="images/starburstyellow1.png" class="starburst" id="yellow2v1"></div>
+    <div id="9" class="elements">
+      <img src="images/starburstyellow1.png" class="starburst" id="yellow3v1"></div>
+    <div id="10" class="elements">
+      <img src="images/starburstblue.png" class="starburst" id="blue3"></div>
+    <div id="11" class="elements">
+      <img src="images/starburstyellow2.png" class="starburst" id="yellow3v2"></div>
+    <div id="12" class="elements">
+      <img src="images/starburstwhite.png" class="starburst" id="white3"></div>
+    <div id="13" class="elements">
+      <img src="images/starburstyellow2.png" class="starburst" id="yellow4v2"></div>
+    <div id="14" class="elements">
+      <img src="images/starburstwhite.png" class="starburst" id="white4"></div>
+    <div id="15" class="elements">
+      <img src="images/starburstyellow1.png" class="starburst" id="yellow4v1"></div>
+    <div id="16" class="elements">
+      <img src="images/starburstblue.png" class="starburst" id="blue4"></div>
+    <div id="17" class="elements">
+      <img src="images/starburstblue.png" class="starburst" id="blue5"></div>
+    <div id="18" class="elements">
+      <img src="images/starburstyellow1.png" class="starburst" id="yellow5v1"></div>
+    <div id="19" class="elements">
+      <img src="images/starburstwhite.png" class="starburst" id="white5"></div>
+    <div id="20" class="elements">
+      <img src="images/starburstyellow2.png" class="starburst" id="yellow5v2"></div>
+    <div id="21" class="elements">
+      <img src="images/starburstwhite.png" class="starburst" id="white6"></div>
+    <div id="22" class="elements">
+      <img src="images/starburstyellow2.png" class="starburst" id="yellow6v2"></div>
+    <div id="23" class="elements">
+      <img src="images/starburstblue.png" class="starburst" id="blue6"></div>
+    <div id="24" class="elements">
+      <img src="images/starburstyellow1.png" class="starburst" id="yellow6v1"></div>
+    <div id="25" class="elements">
+      <img src="images/starburstyellow1.png" class="starburst" id="yellow7v1"></div>
+    <div id="26" class="elements">
+      <img src="images/starburstblue.png" class="starburst" id="blue7"></div>
+    <div id="27" class="elements">
+      <img src="images/starburstyellow2.png" class="starburst" id="yellow7v2"></div>
+    <div id="28" class="elements">
+      <img src="images/starburstwhite.png" class="starburst" id="white7"></div>
+
+  </div>
 
 
 

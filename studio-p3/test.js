@@ -11,7 +11,9 @@ var base = new Airtable({ apiKey: "keyqHyhH8ygrd2Utf" }).base(
 
 // get our collection base, select all the records
 // specify functions that will receive the data
-base("toys").select({}).eachPage(gotPageOfToys, gotAllToys);
+base('toys').select({
+  view: "medium"
+}).eachPage(gotPageOfToys, gotAllToys);
 
 // an empty array to hold our data
 var toys = [];

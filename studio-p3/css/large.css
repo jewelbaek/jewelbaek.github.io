@@ -106,29 +106,42 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 1vh;
-  height: 29vh;
+  height: 35vh;
   width: 100vw;
   overflow-y: auto;
   position: relative;
+  z-index: 50;
+}
+
+.starcontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 1vh;
+  height: 35vh;
+  width: 100vw;
+  overflow-y: auto;
+  position: absolute;
+  margin-top: -35vh;
 }
 
 .starburst {
+  background-color: ;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
   position: relative;
   display: inline-block;
-  height: 25vh;
+  height: 30vh;
 }
 
 .images {
+  background-color: ;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
   display: inline-block;
   height: 19vh;
-  cursor: pointer;
 }
 
 .elements {
@@ -136,38 +149,44 @@ a:hover {
   position: relative;
 }
 
-
-.close-img {
-  font-family: callingcode;
-  position: absolute;
-  color: white;
-  font-size: 1.75rem;
-  z-index: 140;
-  margin-left: -89vw;
-  margin-top: -93vh;
-  cursor: pointer;
-  display: flex;
+.toy-container {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  position: relative;
 }
 
-.largediv {
-  background-color: rgba(0,0,0,0.7);
-  width: 100vw;
-  height: 100vh;
-  margin-top: -45vh;
-  z-index: 120;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+.toy-image {
+  width: auto;
+  height: 14rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: grid;
+}
+
+.toy-name {
   display: none;
 }
 
-.largeimages {
-  height: 75vh;
-  z-index: 130;
+.toy-size {
+  display: none;
 }
 
-.largediv.show {
-  display: flex;
+.toy-color {
+  display: none;
+}
+
+.toy-species {
+  display: none;
+}
+
+.toy-universe {
+  display: none;
 }
 
 /* Smartphones (portrait) ----------- */

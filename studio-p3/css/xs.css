@@ -106,30 +106,67 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 1vh;
-  height: 200vh;
+  height: 300vh;
   width: 100vw;
   overflow-y: auto;
+  position: relative;
+  z-index: 50;
+}
+
+.container.list {
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 25px;
+  border-color: white;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 30vw 70vw;
+  grid-template-rows: auto;
+  position: relative;
+}
+
+.starcontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 1vh;
+  height: 300vh;
+  width: 100vw;
+  overflow-y: auto;
+  position: absolute;
+  margin-top: -300vh;
+}
+
+.starcontainer.list {
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 25px;
+  border-color: white;
+  margin: 0;
+  display: none;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
   position: relative;
 }
 
 .starburst {
-  background-color: ;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
   position: relative;
   display: inline-block;
-  height: 25vh;
+  height: 30vh;
 }
 
-.images {
-  margin: auto;
-  position: absolute;
+.starburst.list {
+  width: auto;
+  height: 17rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: 3rem;
   top: 0; left: 0; bottom: 0; right: 0;
-  display: inline-block;
-  height: 19vh;
-  cursor: pointer;
+  display: grid;
 }
 
 .elements {
@@ -137,36 +174,96 @@ a:hover {
   position: relative;
 }
 
-.close-img {
-  font-family: callingcode;
-  position: absolute;
-  color: white;
-  font-size: 1.75rem;
-  z-index: 140;
-  margin-left: -89vw;
-  margin-top: -93vh;
-  cursor: pointer;
-  display: flex;
+.toy-container {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  position: relative;
 }
 
-.largediv {
-  background-color: rgba(0,0,0,0.7);
-  width: 100vw;
-  height: 100vh;
-  z-index: 120;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+.toy-container.list {
+}
+
+.toy-image {
+  width: auto;
+  height: 8rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: grid;
+}
+
+.toy-image.list {
+}
+
+.toy-name {
   display: none;
 }
 
-.largeimages {
-  height: 75vh;
-  z-index: 130;
+.toy-name.list {
+  margin: 0;
+  padding-bottom: 5rem;
+  font-family: callingcode;
+  color: white;
+  font-weight: normal;
+  font-size: 3.5rem;
+  display: grid;
 }
 
-.largediv.show {
-  display: flex;
+.toy-size {
+  display: none;
+}
+
+.toy-size.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 2/7;
+  display: grid;
+}
+
+.toy-color {
+  display: none;
+}
+
+.toy-color.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 2/7;
+  display: grid;
+}
+
+.toy-species {
+  display: none;
+}
+
+.toy-species.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 2/7;
+  display: grid;
+}
+
+.toy-universe {
+  display: none;
+}
+
+.toy-universe.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 2/7;
+  display: grid;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -218,7 +315,7 @@ and (orientation : portrait) {
 
   .container {
     grid-template-columns: repeat(2, 1fr);
-    height: 300vh;
+    height: 360vh;
   }
 
   .starburst {
@@ -280,7 +377,7 @@ and (orientation : portrait) {
 
   .container {
     grid-template-columns: repeat(3, 1fr);
-    height: 200vh;
+    height: 235vh;
     width: 100vw;
   }
 

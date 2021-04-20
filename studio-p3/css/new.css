@@ -97,6 +97,7 @@ a:hover {
   float: right;
   margin-top: 12vh;
   margin-right: 3vw;
+  cursor: pointer;
 }
 
 .buttons {
@@ -107,10 +108,16 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 1vh;
-  height: 257vh;
+  height: 700vh;
   width: 100vw;
   overflow-y: auto;
   position: relative;
+  z-index: 50;
+}
+
+.container.list {
+  margin-top: 15vh;
+  position: absolute;
 }
 
 .starburst {
@@ -121,7 +128,7 @@ a:hover {
   margin-bottom: auto;
   position: relative;
   display: inline-block;
-  height: 25vh;
+  height: 30vh;
 }
 
 .images {
@@ -139,13 +146,24 @@ a:hover {
 }
 
 .toy-container {
-  border: 1px solid;
-  border-color: white;
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
+  position: relative;
+}
+
+.toy-container.list {
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 25px;
+  border-color: white;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 30vw 60vw 10vw 10vw 10vw 10vw 10vw 10vw;
+  grid-template-rows: 3.5rem 3.5rem 3.5rem 3.5rem 3.5rem;
+  row-gap: 0.3rem;
   position: relative;
 }
 
@@ -155,7 +173,18 @@ a:hover {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: auto;
-  margin-left: 6rem;
+  margin-left: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: grid;
+}
+
+.toy-image.list {
+  width: auto;
+  height: 17rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: 3rem;
   top: 0; left: 0; bottom: 0; right: 0;
   display: grid;
 }
@@ -164,20 +193,61 @@ a:hover {
   display: none;
 }
 
+.toy-name.list {
+  margin: 0;
+  padding-bottom: 5rem;
+  font-family: callingcode;
+  color: white;
+  font-weight: normal;
+  font-size: 3.5rem;
+}
+
 .toy-size {
   display: none;
+}
+
+.toy-size.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 2/7;
 }
 
 .toy-color {
   display: none;
 }
 
+.toy-color.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 2/7;
+}
+
 .toy-species {
   display: none;
 }
 
+.toy-species.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 2/7;
+}
+
 .toy-universe {
   display: none;
+}
+
+.toy-universe.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 2/7;
 }
 
 /* Smartphones (portrait) ----------- */

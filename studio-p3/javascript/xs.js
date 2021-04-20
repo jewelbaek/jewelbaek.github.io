@@ -11,7 +11,9 @@ var base = new Airtable({ apiKey: "keyqHyhH8ygrd2Utf" }).base(
 
 // get our collection base, select all the records
 // specify functions that will receive the data
-base("toys").select({}).eachPage(gotPageOfToys, gotAllToys);
+base('toys').select({
+  view: "xsmall"
+}).eachPage(gotPageOfToys, gotAllToys);
 
 // an empty array to hold our data
 var toys = [];
@@ -59,7 +61,7 @@ function showToys() {
     // creating a new div container
     var toyContainer = document.createElement("div");
     toyContainer.classList.add("toy-container");
-    document.querySelector(".container").append(toyContainer);
+    document.querySelector(".container").append(toyContainer)
 
     var toyImage = document.createElement("img");
     toyImage.classList.add("toy-image");
@@ -92,45 +94,6 @@ function showToys() {
     toyUniverse.innerText = ("universe: ")+toy.fields.universe;
     toyContainer.append(toyUniverse);
 
-    var toyXSmall = document.getElementById("xs");
-      toyXSmall.addEventListener("click", function(){
-        console.log("is it working lol");
-        if (toy.fields.size === 'x-small'){
-        toyContainer.style.display = "grid"
-      } else {
-        toyContainer.style.display = "none"
-      }
-    })
-
-    var toySmall = document.getElementById("small");
-      toySmall.addEventListener("click", function(){
-        console.log("is it working lol");
-        if (toy.fields.size === 'small'){
-        toyContainer.style.display = "grid"
-      } else {
-        toyContainer.style.display = "none"
-      }
-    })
-
-    var toyMedium = document.getElementById("med");
-      toyMedium.addEventListener("click", function(){
-        console.log("is it working lol");
-        if (toy.fields.size === 'medium'){
-        toyContainer.style.display = "grid"
-      } else {
-        toyContainer.style.display = "none"
-      }
-    })
-
-    var toyLarge = document.getElementById("large");
-      toyLarge.addEventListener("click", function(){
-        console.log("is it working lol");
-        if (toy.fields.size === 'large'){
-        toyContainer.style.display = "grid"
-      } else {
-        toyContainer.style.display = "none"
-      }
-    })
     });
 }
 
@@ -142,10 +105,49 @@ document.getElementById('gridmenu').addEventListener('click', function () {
 document.getElementById('listmenu').addEventListener('click', function () {
   console.log("is the list working");
   document.querySelector('.container').classList.add('list');
+});
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
+  document.querySelector('.starcontainer').classList.add('list');
+});
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
+  document.querySelector('.starburst').classList.add('list');
+});
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
   document.querySelector('.toy-container').classList.add('list');
+});
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
   document.querySelector('.toy-image').classList.add('list');
+});
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
+  document.querySelector('.toy-name').classList.add('list');
+});
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
   document.querySelector('.toy-size').classList.add('list');
+});
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
   document.querySelector('.toy-color').classList.add('list');
+});
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
   document.querySelector('.toy-species').classList.add('list');
+});
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
   document.querySelector('.toy-universe').classList.add('list');
 });

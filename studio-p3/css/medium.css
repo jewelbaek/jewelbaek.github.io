@@ -63,7 +63,6 @@ body {
   font-family: callingcode;
   font-size: 1.5rem;
   color: white;
-  cursor: pointer;
 }
 
 a {
@@ -97,7 +96,6 @@ a:hover {
   float: right;
   margin-top: 12vh;
   margin-right: 3vw;
-  cursor: pointer;
 }
 
 .buttons {
@@ -108,27 +106,22 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 1vh;
-  height: 300vh;
+  height: 250vh;
   width: 100vw;
   overflow-y: auto;
   position: relative;
   z-index: 50;
 }
 
-.container.list {
-  margin-top: 15vh;
-  position: absolute;
-}
-
 .starcontainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-top: 1vh;
-  height: 300vh;
+  height: 250vh;
   width: 100vw;
   overflow-y: auto;
   position: absolute;
-  margin-top: -300vh;
+  margin-top: -250vh;
 }
 
 .starburst {
@@ -165,22 +158,9 @@ a:hover {
   position: relative;
 }
 
-.toy-container.list {
-  border: 1px solid;
-  padding: 1rem;
-  border-radius: 25px;
-  border-color: white;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 30vw 60vw 10vw 10vw 10vw 10vw 10vw 10vw;
-  grid-template-rows: 3.5rem 3.5rem 3.5rem 3.5rem 3.5rem;
-  row-gap: 0.3rem;
-  position: relative;
-}
-
 .toy-image {
   width: auto;
-  height: 10rem;
+  height: 13rem;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: auto;
@@ -189,23 +169,8 @@ a:hover {
   display: grid;
 }
 
-.toy-image.list {
-  width: auto;
-  height: 17rem;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: 3rem;
-  top: 0; left: 0; bottom: 0; right: 0;
-  display: grid;
-}
-
 .toy-name {
   display: none;
-}
-
-.toy-name.list {
-  display: block;
 }
 
 .toy-size {
@@ -223,8 +188,20 @@ a:hover {
 .toy-universe {
   display: none;
 }
+/*
+.close-img {
+  font-family: callingcode;
+  position: absolute;
+  color: white;
+  font-size: 1.75rem;
+  z-index: 140;
+  margin-left: -89vw;
+  margin-top: -93vh;
+  cursor: pointer;
+  display: flex;
+}
 
-.toy-container.large {
+.largediv {
   background-color: rgba(0,0,0,0.7);
   width: 100vw;
   height: 100vh;
@@ -232,12 +209,16 @@ a:hover {
   align-items: center;
   justify-content: center;
   position: absolute;
-  display: flex;
+  display: none;
 }
 
-.toy-image.large {
+.largeimages {
   height: 75vh;
   z-index: 130;
+}
+
+.largediv.show {
+  display: flex;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -289,7 +270,7 @@ and (orientation : portrait) {
 
   .container {
     grid-template-columns: repeat(2, 1fr);
-    height: 360vh;
+    height: 300vh;
   }
 
   .starburst {
@@ -351,7 +332,7 @@ and (orientation : portrait) {
 
   .container {
     grid-template-columns: repeat(3, 1fr);
-    height: 235vh;
+    height: 200vh;
     width: 100vw;
   }
 

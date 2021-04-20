@@ -11,7 +11,9 @@ var base = new Airtable({ apiKey: "keyqHyhH8ygrd2Utf" }).base(
 
 // get our collection base, select all the records
 // specify functions that will receive the data
-base("toys").select({}).eachPage(gotPageOfToys, gotAllToys);
+base('toys').select({
+  view: "small"
+}).eachPage(gotPageOfToys, gotAllToys);
 
 // an empty array to hold our data
 var toys = [];
@@ -51,52 +53,19 @@ function consoleLogToys() {
   });
 }
 
-function filterByTag(event) {
-  let allImages = document.querySelectorAll('.toy-image');
-  allImages.forEach(function (item){
-    if (item.classList.contains(event.target.dataset.size)) {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
-  });
-}
-
-function showInfo(event) {
-  //show modal for produce items only
-  if (event.target.classList.contains('produce')) {
-    infoDetails.innerHTML = `
-      <h1>${event.target.dataset.name}</h1>
-      <p>available: ${event.target.dataset.availability}</p>
-    `;
-
-    infoElement.classList.add('show');
-  }
-}
-
 // look through our airtable data, create elements
 function showToys() {
   console.log("showToys()");
   toys.forEach((toy) => {
 
+    // creating a new div container
+    var toyContainer = document.createElement("div");
+    toyContainer.classList.add("toy-container");
+    document.querySelector(".container").append(toyContainer);
+
     var toyImage = document.createElement("img");
     toyImage.classList.add("toy-image");
     toyImage.src = toy.fields.images[0].url;
-
-    //adding a unified class
-      img.classList.add('toys');
-
-      // adding our produce type tags
-      item.fields.Tags.forEach(function (tag) {
-        img.classList.add(tag);
-      });
-
-      //associate name
-      img.dataset.name = item.fields.Name;
-
-      //associate the availability
-      img.dataset.availability = item.fields.Availability;
-
     toyContainer.append(toyImage);
 
     // add titles to toyContainer
@@ -126,11 +95,12 @@ function showToys() {
     toyContainer.append(toyUniverse);
 
     });
+
 }
 
-let toyFilter = '';
-function filterByToy(event) {
-  console.log(event)
-}
-
-let small-images = document.querySelectorAll('')
+document.querySelector('.listbutton').addEventListener("click", function() {
+  toys.forEach((toy) => {
+  console.log("working or nah");
+  document.querySelector('.toy-image').classList.toggle('list');
+});
+});
