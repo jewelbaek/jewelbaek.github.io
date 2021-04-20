@@ -4,6 +4,20 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+}
+
 @font-face {
   font-family: playfair;
   src: url(playfairbolditalic.ttf)
@@ -39,6 +53,17 @@ body {
   color: #F5BA47;
 }
 
+#plushie a:link {
+  color: #F5BA47;
+}
+#plushie a:visited {
+  color: #F5BA47;
+  text-decoration: none;
+}
+#plushie a:hover {
+   color: white;
+}
+
 #plushie2 {
   display: none;
 }
@@ -50,11 +75,39 @@ body {
 
 #twinkle1 {
   margin-left: 2.1vw;
+  animation-name: spin;
+  delay: 0.5s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 #twinkle2 {
   margin-left: 24.2vw;
   margin-top: -6.5vh;
+  animation-name: spin2;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin2 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
 
 .tabs {
@@ -65,29 +118,60 @@ body {
   color: white;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: #8188CB;
-}
-
 #xs {
   margin-left: 31vw;
+}
+
+#xs a:link {
+  color: white;
+}
+#xs a:visited {
+  color: white;
+}
+#xs a:hover {
+   color: #8188CB;
 }
 
 #small {
   margin-left: 51vw;
 }
 
+#small a:link {
+  color: white;
+}
+#small a:visited {
+  color: white;
+}
+#small a:hover {
+   color: #8188CB;
+}
+
 #med {
   margin-left: 71vw;
 }
 
+#med a:link {
+  color: white;
+}
+#med a:visited {
+  color: white;
+}
+#med a:hover {
+   color: #8188CB;
+}
+
 #large {
   margin-left: 91vw;
+}
+
+#large a:link {
+  color: white;
+}
+#large a:visited {
+  color: white;
+}
+#large a:hover {
+   color: #8188CB;
 }
 
 .button {
@@ -96,6 +180,7 @@ a:hover {
   float: right;
   margin-top: 12vh;
   margin-right: 3vw;
+  cursor: pointer
 }
 
 .buttons {
@@ -113,6 +198,17 @@ a:hover {
   z-index: 50;
 }
 
+.container.list {
+  margin: 0;
+  padding-top: 3vh;
+  height: 1150vh;
+  display: grid;
+  grid-template-columns: repeat(1, 100vw);
+  grid-template-rows: auto;
+  position: relative;
+  grid-gap: 3.5rem;
+}
+
 .starcontainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -122,6 +218,16 @@ a:hover {
   overflow-y: auto;
   position: absolute;
   margin-top: -250vh;
+}
+
+.starcontainer.list {
+  display: grid;
+  grid-template-columns: repeat(1, 100vw);
+  height: 1150vh;
+  width: 100vw;
+  overflow-y: auto;
+  position: absolute;
+  margin-top: -1150vh;
 }
 
 .starburst {
@@ -135,18 +241,96 @@ a:hover {
   height: 30vh;
 }
 
-.images {
-  background-color: ;
+.blue {
+  animation-name: bluescale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bluescale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.yellow1 {
+  animation-name: yellow1scale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes yellow1scale {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.white {
+  animation-name: whitescale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes whitescale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.yellow2 {
+  animation-name: yellow2scale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes yellow2scale {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+.starburst.list {
+  width: auto;
+  height: 17rem;
   margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  display: inline-block;
-  height: 19vh;
+  display: grid;
+  grid-row: 1/6;
 }
 
 .elements {
   display: grid;
   position: relative;
+}
+
+.elements.list {
+  display: grid;
+  position: relative;
+  grid-template-columns: 25vw 2rem 1fr;
+  grid-column: 1/6;
 }
 
 .toy-container {
@@ -156,6 +340,10 @@ a:hover {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   position: relative;
+}
+
+.toy-container.list {
+  grid-template-columns: 25vw 2rem 1fr;
 }
 
 .toy-image {
@@ -169,56 +357,100 @@ a:hover {
   display: grid;
 }
 
+.toy-image:hover {
+  animation-name: toyscale;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes toyscale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.toy-image.list {
+  width: auto;
+  height: 13rem;
+  margin: auto;
+  display: grid;
+  grid-row: 1/6;
+}
+
 .toy-name {
   display: none;
+}
+
+.toy-name.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-weight: normal;
+  font-size: 3.5rem;
+  display: grid;
+  grid-column: 3/3;
 }
 
 .toy-size {
   display: none;
 }
 
+.toy-size.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 3/3;
+  display: grid;
+  height: 2.5rem;
+}
+
 .toy-color {
   display: none;
+}
+
+.toy-color.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 3/3;
+  display: grid;
+  height: 2.5rem;
 }
 
 .toy-species {
   display: none;
 }
 
+.toy-species.list {
+  margin: 0;
+  font-family: callingcode;
+  color: white;
+  font-size: 1.5rem;
+  grid-column: 3/3;
+  display: grid;
+  height: 2.5rem;
+}
+
 .toy-universe {
   display: none;
 }
-/*
-.close-img {
+
+.toy-universe.list {
+  margin: 0;
   font-family: callingcode;
-  position: absolute;
   color: white;
-  font-size: 1.75rem;
-  z-index: 140;
-  margin-left: -89vw;
-  margin-top: -93vh;
-  cursor: pointer;
-  display: flex;
-}
-
-.largediv {
-  background-color: rgba(0,0,0,0.7);
-  width: 100vw;
-  height: 100vh;
-  z-index: 120;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  display: none;
-}
-
-.largeimages {
-  height: 75vh;
-  z-index: 130;
-}
-
-.largediv.show {
-  display: flex;
+  font-size: 1.5rem;
+  grid-column: 3/3;
+  display: grid;
+  height: 2.5rem;
 }
 
 /* Smartphones (portrait) ----------- */
@@ -239,6 +471,17 @@ and (orientation : portrait) {
     color: #F5BA47;
   }
 
+  #plushie2 a:link {
+    color: #F5BA47;
+  }
+  #plushie2 a:visited {
+    color: #F5BA47;
+    text-decoration: none;
+  }
+  #plushie2 a:hover {
+     color: white;
+  }
+
   #menu2 {
     display: block;
     text-align: center;
@@ -255,6 +498,16 @@ and (orientation : portrait) {
     padding-right: 10vw;
     }
 
+    .tabs1 a:link {
+      color: white;
+    }
+    .tabs1 a:visited {
+      color: white;
+    }
+    .tabs1 a:hover {
+      color: #8188CB;
+    }
+
   .buttons {
     display: inline-block;
     width: 3vh;
@@ -269,19 +522,116 @@ and (orientation : portrait) {
   }
 
   .container {
-    grid-template-columns: repeat(2, 1fr);
-    height: 300vh;
+    grid-template-columns: repeat(3, 1fr);
+    height: 200vh;
+  }
+
+  .container.list {
+    grid-template-columns: repeat(1, 100vw);
+    grid-gap: 2rem;
+    height: 100vh;
+  }
+
+  .starcontainer {
+    display: none;
+  }
+
+  .starcontainer.list {
+    display: none;
+  }
+
+  .elements {
+    display: none;
+  }
+
+  .elements.list {
+    display: none;
   }
 
   .starburst {
-    height: 18vh;
+    display: none;
   }
 
-  .images {
-    height: 17vh;
+  .starburst.list {
+    display: none;
   }
 
-}
+  .toy-container {
+    margin: auto;
+    display: grid;
+    position: relative;
+  }
+
+  .toy-container.list {
+    grid-template-columns: 8.5rem 1rem 50vw;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+  }
+
+  .toy-image {
+    width: 6rem;
+    height: auto;
+  }
+
+  .toy-image.list {
+    width: 8rem;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 0.75rem;
+    display: grid;
+    grid-row: 1/6;
+  }
+
+  .toy-name.list {
+    display: block;
+    margin: 0;
+    font-family: callingcode;
+    color: white;
+    font-size: 1.5rem;
+    grid-column: 3/6;
+  }
+
+  .toy-size.list {
+    display: block;
+    margin: 0;
+    font-family: callingcode;
+    color: white;
+    font-size: 1rem;
+    grid-column: 3/6;
+  }
+
+  .toy-color.list {
+    display: block;
+    margin: 0;
+    font-family: callingcode;
+    color: white;
+    font-size: 1rem;
+    grid-column: 3/6;
+  }
+
+  .toy-species.list {
+    display: block;
+    margin: 0;
+    font-family: callingcode;
+    color: white;
+    font-size: 1rem;
+    grid-column: 3/6;
+  }
+
+  .toy-universe.list {
+    display: block;
+    margin: 0;
+    font-family: callingcode;
+    color: white;
+    font-size: 1rem;
+    grid-column: 3/6;
+  }
+
+  }
 
 /* iPads (portrait) ----------- */
 @media only screen
@@ -304,7 +654,7 @@ and (orientation : portrait) {
   #menu2 {
     display: block;
     text-align: center;
-    height: 10vh;
+    height: 7vh;
     width: 100vw;
     z-index: 100;
   }
@@ -334,6 +684,13 @@ and (orientation : portrait) {
     grid-template-columns: repeat(3, 1fr);
     height: 200vh;
     width: 100vw;
+  }
+
+  .starcontainer {
+    grid-template-columns: repeat(3, 1fr);
+    height: 200vh;
+    width: 100vw;
+    margin-top: -200vh;
   }
 
   .starburst {

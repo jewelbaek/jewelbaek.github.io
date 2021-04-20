@@ -98,9 +98,62 @@ function showToys() {
 
 }
 
-document.querySelector('.listbutton').addEventListener("click", function() {
-  toys.forEach((toy) => {
-  console.log("working or nah");
-  document.querySelector('.toy-image').classList.toggle('list');
+document.getElementById('gridmenu').addEventListener('click', function () {
+  console.log("is the grid working");
+  document.querySelectorAll('.container').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.starcontainer').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.starburst').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.elements').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-container').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-image').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-name').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-size').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-color').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-species').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-universe').forEach((i) => i.classList.remove('list'));
 });
+
+document.getElementById('listmenu').addEventListener('click', function () {
+  console.log("is the list working");
+  document.querySelectorAll('.container').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.starcontainer').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.starburst').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.elements').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-container').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-image').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-name').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-size').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-color').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-species').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-universe').forEach((i) => i.classList.add('list'));
+});
+
+document.getElementById('gridmenu2').addEventListener('click', function () {
+  console.log("is the grid working");
+  document.querySelectorAll('.container').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.starcontainer').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.starburst').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.elements').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-container').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-image').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-name').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-size').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-color').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-species').forEach((i) => i.classList.remove('list'));
+  document.querySelectorAll('.toy-universe').forEach((i) => i.classList.remove('list'));
+});
+
+document.getElementById('listmenu2').addEventListener('click', function () {
+  console.log("is the list working");
+  document.querySelectorAll('.container').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.starcontainer').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.starburst').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.elements').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-container').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-image').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-name').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-size').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-color').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-species').forEach((i) => i.classList.add('list'));
+  document.querySelectorAll('.toy-universe').forEach((i) => i.classList.add('list'));
 });
