@@ -7,9 +7,10 @@ document.getElementById('cloudbutton').addEventListener('click', function () {
 });
 
 document.getElementById('snowbutton').addEventListener('click', function () {
-  document.querySelector('.snow').classList.add('show');
+  document.querySelectorAll('.snow').classList.add('show');
 });
 
 document.getElementById('snowbutton').addEventListener('click', function () {
-  document.querySelector('.snoww').classList.add('show');
+  document.querySelectorAll('.snow').forEach((i) => i.classList.add('show'));
+  document.querySelectorAll('.snoww').forEach((i) => i.classList.add('show'));
 });
