@@ -227,6 +227,8 @@ and (orientation : portrait) {
   #triangle {
     height: 30vh;
     margin-top: 7vh;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #result {
