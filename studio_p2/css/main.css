@@ -263,9 +263,18 @@ body.loaded .shadows {
   }
 }
 
+.door::-webkit-scrollbar-track {
+    background-color: transparent;
+}
 
 .door::-webkit-scrollbar {
-  display: none;
+    height: 2px;
+    background-color: transparent;
+}
+
+.door::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
 }
 
 .kids {
