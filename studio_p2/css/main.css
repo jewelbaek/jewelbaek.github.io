@@ -14,18 +14,20 @@ body {
 }
 
 .shadows {
-  font-size: 7.3vh;
+  font-size: 3rem;
   color: #141414;
   font-family: essonnes-display;
-  letter-spacing: 2.8vw;
+  letter-spacing: 3vw;
   line-height: 3.3vh;
   width: 90vw;
   position: absolute;
-  top: 39.5%;
-  left: 50%;
-  transform: translate(-48.5%, -50%);
   text-align: center;
-  margin: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   transition: opacity 7s;
   z-index: -5000;
   opacity: 0;
@@ -187,12 +189,14 @@ body.loaded .shadows {
 #shadows8 {
   color: #393939;
   margin: 0;
+  font-size: 3rem;
 }
 
 #shadows8.animated {
   animation: change8v2 3s,
   change8 20s infinite;
   animation-delay: 1s, 4s;
+  font-size: 3rem;
 }
 
 @keyframes change8v2 {
@@ -208,12 +212,14 @@ body.loaded .shadows {
 
 #shadows9 {
   color: #1B1B1B;
+  font-size: 3rem;
 }
 
 #shadows9.animated {
   animation: change9v2 3s,
   change9 25s infinite;
   animation-delay: 1s, 4s;
+  font-size: 3rem;
 }
 
 @keyframes change9v2 {
@@ -246,10 +252,16 @@ body.loaded .shadows {
 }
 
 .door.animated {
-  animation: slide-top 5s both;
-  animation-delay: 4s;
+  animation: doordoordoor, slide-top both;
+  animation-duration: 6s, 5s;
+  animation-delay: 0s, 4s;
   z-index: 0;
   display: block;
+}
+
+@keyframes doordoordoor {
+  0% {opacity: 0}
+  100% {opacity: 100}
 }
 
 @keyframes slide-top {
