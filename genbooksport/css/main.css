@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: g2erika;
+  src: url(fonts/G2ErikaRegular.otf);
+}
+
+@font-face {
+  font-family: monospacetypewriter;
+  src: url(fonts/MonospaceTypewriter.ttf);
+}
+
+#bookshelf {
+  font-family: nimbus-sans, sans-serif;
+  font-style: normal;
+  font-size: 1.5em;
+  color: cyan;
+
+  background-color: black;
+  display: flex;
+  width: 100%;
+}
+
+#bookshelf:hover {
+  background-color: yellow;
+  color: black;
+}
+
+#bookshelf a:visited {
+  text-decoration: none!important;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  font-size: 3em;
+  text-align: center;
+}
+
+#gensong {
+  font-family: nimbus-sans-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-align: center;
+
+  background-color: black;
+  width: 100%;
+}
+
+#gensong:hover {
+  color: black;
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
+#gensonggif {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  width: auto;
+  height: 40em;
+}
+
+#gensonggif img {
+  width: auto;
+  height: 40em;
+}
+
+#karaokedescription {
+  display: none;
+}
+
+#gensonggif:hover div{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1500;
+  padding: 1em;
+
+  width: 30em;
+  height: auto;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  font-family: nimbus-sans, sans-serif;
+  font-style: normal;
+  font-size: 1.5em;
+  color: cyan;
+}
+
+#soju {
+  font-family: g2erika;
+  color: black;
+  text-align: center;
+
+  background-color: #F5F5F5;
+  width: 100%;
+}
+
+#soju:hover {
+  color: #009448;
+  background-color: black;
+  cursor: pointer;
+}
+
+#sojugif {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  width: auto;
+  height: 40em;
+}
+
+#sojugif img {
+  width: auto;
+  height: 40em;
+}
+
+#sojudescription {
+  display: none;
+}
+
+#sojugif:hover div{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1500;
+  padding: 1em;
+
+  width: 30em;
+  height: auto;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  font-family: nimbus-sans, sans-serif;
+  font-style: normal;
+  font-size: 1.5em;
+  color: cyan;
+}
+
+#visual {
+  font-family: monospacetypewriter;
+  color: white;
+  text-align: center;
+
+  background-color: black;
+  width: 100%;
+}
+
+#visual:hover {
+  color: #F30092;
+  background-color: #2227A8;
+  cursor: pointer;
+}
+
+#visualgif {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  width: auto;
+  height: 40em;
+}
+
+#visualgif img {
+  width: auto;
+  height: 40em;
+}
+
+#visualdescription {
+  display: none;
+}
+
+#visualgif:hover div{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1500;
+  padding: 1em;
+
+  width: 30em;
+  height: auto;
+
+  background-color: rgba(0, 0, 0, 0.85);
+  font-family: nimbus-sans, sans-serif;
+  font-style: normal;
+  font-size: 1.5em;
+  color: cyan;
+}
+
+
+#classname {
+  font-family: nimbus-sans, sans-serif;
+  font-style: normal;
+  font-size: 1.5em;
+  color: cyan;
+  z-index: 1500;
+
+  background-color: black;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+
+a:visited{
+  text-decoration: none!important;
+}
+
+#classname:hover {
+  background-color: yellow;
+  color: black;
+}
